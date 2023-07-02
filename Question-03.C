@@ -5,10 +5,10 @@
 int main()
 {
     char str[20] ;
-    printf("Enter a string constant : ");
+    printf("Enter a string constant (lowercase) : ");
     fgets(str,20,stdin);
 
-    int i,count;
+    int i,count=0;
 
     for(i=0;str[i];i++)
     {
