@@ -8,19 +8,17 @@ int main()
     printf("Enter a string constant : ");
     fgets(str,20,stdin);
 
-    int i , j , count ;
+    char x ;
+    printf("Enter any character of given strings : ");
+    scanf("%c",&x);
 
-    for(i=0 ; str[i-1] ; i++)
-    {
-            count = 0 ;
+    int i ,count=0 ;
 
-            for(j=0 ; str[j] ; j++)
+    for(i=0 ; str[i] ; i++)
+            if(str[i] == x)
+                    count ++ ;
 
-                    if(str[i] == str[j])
-                            count ++ ;
-
-            printf("\nFreq of %c is %d times.",str[i],count);
-    }
+    printf("\nFreq of %c is %d times.",str[i],count);
 
     return 0 ;
 
